@@ -31,5 +31,15 @@ namespace Laboration2
         {
            
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VälkommenKnapp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
