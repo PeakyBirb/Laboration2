@@ -16,5 +16,20 @@ namespace Laboration2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SkapaKursPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            SkapaKursPanel.Visible = false;
+        }
     }
 }
