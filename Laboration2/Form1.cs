@@ -29,7 +29,7 @@ namespace Laboration2
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            SkapaKursPanel.Visible = false;
+           
         }
     }
 }
