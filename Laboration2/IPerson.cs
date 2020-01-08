@@ -17,11 +17,7 @@ namespace Laboration2
         string epostadress { get; set; }
         string lösenord { get; set; }
 
-        static string HämtaPersonuppgifter(personID)
-        {
-            throw new NotImplementedException();
-        }
+        string HämtaPersonuppgifter (string personID);
 
-        public int MyProperty { get; set; }
     }
 }
