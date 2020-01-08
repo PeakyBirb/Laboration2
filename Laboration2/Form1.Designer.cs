@@ -39,7 +39,7 @@
             // 
             // SkapaKurs
             // 
-            this.SkapaKurs.BackColor = System.Drawing.Color.Yellow;
+            this.SkapaKurs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.SkapaKurs.Location = new System.Drawing.Point(110, 116);
             this.SkapaKurs.Name = "SkapaKurs";
             this.SkapaKurs.Size = new System.Drawing.Size(130, 78);
@@ -61,7 +61,7 @@
             // 
             // RedigeraKurs
             // 
-            this.RedigeraKurs.BackColor = System.Drawing.Color.Yellow;
+            this.RedigeraKurs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.RedigeraKurs.Location = new System.Drawing.Point(110, 222);
             this.RedigeraKurs.Name = "RedigeraKurs";
             this.RedigeraKurs.Size = new System.Drawing.Size(130, 78);
@@ -71,7 +71,7 @@
             // 
             // TilldelaLab
             // 
-            this.TilldelaLab.BackColor = System.Drawing.Color.Yellow;
+            this.TilldelaLab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.TilldelaLab.Location = new System.Drawing.Point(110, 333);
             this.TilldelaLab.Name = "TilldelaLab";
             this.TilldelaLab.Size = new System.Drawing.Size(130, 78);
@@ -81,7 +81,7 @@
             // 
             // BetygsättLab
             // 
-            this.BetygsättLab.BackColor = System.Drawing.Color.Yellow;
+            this.BetygsättLab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BetygsättLab.Location = new System.Drawing.Point(398, 116);
             this.BetygsättLab.Name = "BetygsättLab";
             this.BetygsättLab.Size = new System.Drawing.Size(130, 78);
@@ -91,7 +91,7 @@
             // 
             // BetygsättKurs
             // 
-            this.BetygsättKurs.BackColor = System.Drawing.Color.Yellow;
+            this.BetygsättKurs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BetygsättKurs.Location = new System.Drawing.Point(398, 222);
             this.BetygsättKurs.Name = "BetygsättKurs";
             this.BetygsättKurs.Size = new System.Drawing.Size(130, 78);
@@ -102,13 +102,14 @@
             // 
             // Avsluta
             // 
-            this.Avsluta.BackColor = System.Drawing.Color.Gray;
+            this.Avsluta.BackColor = System.Drawing.Color.Silver;
             this.Avsluta.Location = new System.Drawing.Point(398, 333);
             this.Avsluta.Name = "Avsluta";
             this.Avsluta.Size = new System.Drawing.Size(130, 78);
             this.Avsluta.TabIndex = 6;
             this.Avsluta.Text = "Avsluta";
             this.Avsluta.UseVisualStyleBackColor = false;
+            this.Avsluta.Click += new System.EventHandler(this.Avsluta_Click);
             // 
             // Form1
             // 
