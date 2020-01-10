@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace Laboration2
 {
-    public partial class Form2 : Form
+    public partial class _SkapaKurs : Form
     {
-        public Form2()
+        public _SkapaKurs()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void StudenterListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

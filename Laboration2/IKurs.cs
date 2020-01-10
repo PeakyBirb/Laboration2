@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laboration2
 {
-    interface IKurs
+    public interface IKurs
     {
         DateTime StartDatum { get; set; }
         DateTime SlutDatum { get; set; }
@@ -16,10 +16,7 @@ namespace Laboration2
         string slutbetyg { get; set; }
         string[] deltagandeStudenter { get; set; }
 
-        public IKurs()
-        {
-            
-        }
+       
 
 
     }

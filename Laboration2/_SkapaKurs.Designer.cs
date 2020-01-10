@@ -1,6 +1,6 @@
 ﻿namespace Laboration2
 {
-    partial class Form2
+    partial class _SkapaKurs
     {
         /// <summary>
         /// Required designer variable.
@@ -60,6 +60,7 @@
             this.StudenterListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.StudenterListBox.Size = new System.Drawing.Size(293, 95);
             this.StudenterListBox.TabIndex = 1;
+            this.StudenterListBox.SelectedIndexChanged += new System.EventHandler(this.StudenterListBox_SelectedIndexChanged);
             // 
             // KursnamnText
             // 
@@ -144,7 +145,7 @@
             this.LärarlagText.Text = "Lärare som undervisar i kursen (lärarlag)";
             this.LärarlagText.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form2
+            // _SkapaKurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -160,8 +161,9 @@
             this.Controls.Add(this.LärarlagText);
             this.Controls.Add(this.KursnamnText);
             this.Controls.Add(this.VäljStudenterText);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "_SkapaKurs";
+            this.Text = "Skapa kurs";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

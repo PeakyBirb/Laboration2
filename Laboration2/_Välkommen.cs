@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace Laboration2
 {
-    public partial class Form1 : Form
+    public partial class _Välkommen : Form
     {
-        public Form1()
+        public _Välkommen()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void SkapaKurs_Click(object sender, EventArgs e)
         {
-
+            _SkapaKurs Form2 = new _SkapaKurs();
+            Form2.Show();
         }
 
         private void SkapaKursPanel_Paint(object sender, PaintEventArgs e)
@@ -45,8 +46,17 @@ namespace Laboration2
 
         private void Avsluta_Click(object sender, EventArgs e)
         {
-            Form2 Form2 = new Form2();
-            Form2.Show();
+            
+        }
+
+        private void _Välkommen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RedigeraKurs_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

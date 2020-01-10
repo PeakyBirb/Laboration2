@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Laboration2
 {
-    interface IPerson
+    public interface IPerson
     {
         string personnummer { get; set; }
-        string personID { get; set; }
         string förnamn { get; set; }
         string efternamn { get; set; }
         string adress { get; set; }

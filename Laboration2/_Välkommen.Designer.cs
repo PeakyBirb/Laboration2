@@ -1,6 +1,6 @@
 ﻿namespace Laboration2
 {
-    partial class Form1
+    partial class _Välkommen
     {
         /// <summary>
         /// Required designer variable.
@@ -46,7 +46,7 @@
             this.SkapaKurs.TabIndex = 0;
             this.SkapaKurs.Text = "Skapa kurs";
             this.SkapaKurs.UseVisualStyleBackColor = false;
-            this.SkapaKurs.Click += new System.EventHandler(this.button1_Click);
+            this.SkapaKurs.Click += new System.EventHandler(this.SkapaKurs_Click);
             // 
             // VälkommenKnapp
             // 
@@ -68,6 +68,7 @@
             this.RedigeraKurs.TabIndex = 2;
             this.RedigeraKurs.Text = "Redigera kurs";
             this.RedigeraKurs.UseVisualStyleBackColor = false;
+            this.RedigeraKurs.Click += new System.EventHandler(this.RedigeraKurs_Click);
             // 
             // TilldelaLab
             // 
@@ -111,7 +112,7 @@
             this.Avsluta.UseVisualStyleBackColor = false;
             this.Avsluta.Click += new System.EventHandler(this.Avsluta_Click);
             // 
-            // Form1
+            // _Välkommen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,8 +124,9 @@
             this.Controls.Add(this.RedigeraKurs);
             this.Controls.Add(this.VälkommenKnapp);
             this.Controls.Add(this.SkapaKurs);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "_Välkommen";
+            this.Text = "Välkommen";
+            this.Load += new System.EventHandler(this._Välkommen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
