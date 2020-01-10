@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laboration2
 {
-    class Lärare
+    class Kurs : IKurs
     {
-        private string lärarID { get; set; }
-
-
     }
 }
