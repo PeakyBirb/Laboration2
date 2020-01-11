@@ -29,7 +29,7 @@ namespace Laboration2
 
         private void StudenterListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            StudenterListBox.DisplayMember = "förnamn";
+            StudenterListBox.DisplayMember = 
         }
     }
 }
