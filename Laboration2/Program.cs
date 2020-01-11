@@ -24,7 +24,7 @@ namespace Laboration2
 
             Student a = new Student("199001011111", "Lisa", "Svensson", "Rönngatan 4", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "s168820");
 
-            studentLista = a;
+            //studentLista = a;
         }
 
         
