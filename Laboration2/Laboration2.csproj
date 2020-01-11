@@ -81,6 +81,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\IKurs.datasource" />
+    <None Include="Properties\DataSources\IPerson.datasource" />
+    <None Include="Properties\DataSources\Kurs.datasource" />
+    <None Include="Properties\DataSources\Lärare.datasource" />
+    <None Include="Properties\DataSources\Person.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Student.datasource" />
+    <None Include="Properties\DataSources\_SkapaKurs.datasource" />
+    <None Include="Properties\DataSources\_Välkommen.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -22,14 +22,14 @@ namespace Laboration2
 
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void _SkapaKurs_Load(object sender, EventArgs e)
         {
             
         }
 
         private void StudenterListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            StudenterListBox.DisplayMember = "förnamn";
         }
     }
 }

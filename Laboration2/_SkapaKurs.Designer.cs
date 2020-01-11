@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.VäljStudenterText = new System.Windows.Forms.Label();
             this.StudenterListBox = new System.Windows.Forms.ListBox();
+            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.personBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.KursnamnText = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.KlarKnapp = new System.Windows.Forms.Button();
@@ -39,6 +42,10 @@
             this.Slutdatum = new System.Windows.Forms.Label();
             this.LärareListBox = new System.Windows.Forms.ListBox();
             this.LärarlagText = new System.Windows.Forms.Label();
+            this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // VäljStudenterText
@@ -54,13 +61,25 @@
             // 
             // StudenterListBox
             // 
+            this.StudenterListBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.personBindingSource, "personID", true));
+            this.StudenterListBox.DataSource = this.personBindingSource;
+            this.StudenterListBox.DisplayMember = "förnamn";
             this.StudenterListBox.FormattingEnabled = true;
             this.StudenterListBox.Location = new System.Drawing.Point(44, 295);
             this.StudenterListBox.Name = "StudenterListBox";
             this.StudenterListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.StudenterListBox.Size = new System.Drawing.Size(293, 95);
             this.StudenterListBox.TabIndex = 1;
+            this.StudenterListBox.ValueMember = "efternamn";
             this.StudenterListBox.SelectedIndexChanged += new System.EventHandler(this.StudenterListBox_SelectedIndexChanged);
+            // 
+            // personBindingSource
+            // 
+            this.personBindingSource.DataSource = typeof(Laboration2.Person);
+            // 
+            // personBindingSource1
+            // 
+            this.personBindingSource1.DataSource = typeof(Laboration2.Person);
             // 
             // KursnamnText
             // 
@@ -145,6 +164,10 @@
             this.LärarlagText.Text = "Lärare som undervisar i kursen (lärarlag)";
             this.LärarlagText.Click += new System.EventHandler(this.label1_Click);
             // 
+            // studentBindingSource
+            // 
+            this.studentBindingSource.DataSource = typeof(Laboration2.Student);
+            // 
             // _SkapaKurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,7 +186,10 @@
             this.Controls.Add(this.VäljStudenterText);
             this.Name = "_SkapaKurs";
             this.Text = "Skapa kurs";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Load += new System.EventHandler(this._SkapaKurs_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,5 +208,8 @@
         private System.Windows.Forms.Label Slutdatum;
         private System.Windows.Forms.ListBox LärareListBox;
         private System.Windows.Forms.Label LärarlagText;
+        private System.Windows.Forms.BindingSource personBindingSource;
+        private System.Windows.Forms.BindingSource studentBindingSource;
+        private System.Windows.Forms.BindingSource personBindingSource1;
     }
 }
