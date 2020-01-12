@@ -87,7 +87,7 @@
             this.BetygsättLab.Name = "BetygsättLab";
             this.BetygsättLab.Size = new System.Drawing.Size(130, 78);
             this.BetygsättLab.TabIndex = 4;
-            this.BetygsättLab.Text = "Betygsätt laboration";
+            this.BetygsättLab.Text = "Betygsätt student i inlämning";
             this.BetygsättLab.UseVisualStyleBackColor = false;
             // 
             // BetygsättKurs
@@ -97,7 +97,7 @@
             this.BetygsättKurs.Name = "BetygsättKurs";
             this.BetygsättKurs.Size = new System.Drawing.Size(130, 78);
             this.BetygsättKurs.TabIndex = 5;
-            this.BetygsättKurs.Text = "Betygsätt kurs";
+            this.BetygsättKurs.Text = "Betygsätt student i kurs";
             this.BetygsättKurs.UseVisualStyleBackColor = false;
             this.BetygsättKurs.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -116,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 423);
+            this.ClientSize = new System.Drawing.Size(683, 443);
             this.Controls.Add(this.Avsluta);
             this.Controls.Add(this.BetygsättKurs);
             this.Controls.Add(this.BetygsättLab);

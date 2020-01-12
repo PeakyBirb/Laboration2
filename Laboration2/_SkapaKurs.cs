@@ -108,13 +108,25 @@ namespace Laboration2
 
             //STUDENTMATCHNING
             var studentLista = Student.StudentLista();
+            List<Student> Studentlag = new List<Student>();
 
+            foreach (var item in studentLista)
+            {
+                foreach (var item2 in studentlag)
+                {
+                    if (item2.ToString().ToUpper().Contains(item.studentID.ToString().ToUpper()))
+                    {
+                        Studentlag.Add(item);
+                    }
 
-
-
+                }
+            }
 
             Kurs nyKurs = new Kurs(startDatum, slutDatum, betyg, kursID, kursnamn, lärarlagID, Lärarlag, Studentlag);
 
+            this.Close();
+
+            
         }
 
         private void KursIDTextBox_TextChanged(object sender, EventArgs e)

@@ -36,8 +36,6 @@ namespace Laboration2
 
         public static List<Student> StudentLista()
         {
-          
-            
             return studentLista;
         }
 
