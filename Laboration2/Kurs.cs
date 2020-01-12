@@ -8,20 +8,46 @@ namespace Laboration2
 {
     class Kurs : IKurs
     {
-        public DateTime StartDatum { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DateTime SlutDatum { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string[] möjligaBetyg { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string kursID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string lärarlagID { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string slutbetyg { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string[] deltagandeStudenter { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public DateTime StartDatum { get; set; }
+        public DateTime SlutDatum { get; set; }
+        public string[] möjligaBetyg { get; set; }
+        public string kursID { get; set; }
+        public string lärarlagID { get; set; }
+        public string slutbetyg { get; set; }
 
-        public Kurs()
+
+        private List<Lärare> Lärare = new List<Lärare>();
+
+        public List<Lärare> HämtaLärare()
+        {
+            return Lärare;
+        }
+
+        private List<Student> Studenter = new List<Student>();
+
+        public List<Student> HämtaStudent()
+        {
+            return Studenter;
+        }
+
+        public Kurs(DateTime StartDatum, DateTime SlutDatum)
         {
             this.StartDatum = StartDatum;
 
         }
 
+        public Kurs(DateTime startdatum, DateTime slutdatum, string[] möjligabetyg, string kursID, string lärarlagID, string slutBetyg, List<Lärare> lärare, List<Student> studenter)
+        {
+            this.StartDatum = startdatum;
+            this.SlutDatum = slutdatum;
+            this.möjligaBetyg = möjligabetyg;
+            this.kursID = kursID;
+            this.lärarlagID = lärarlagID;
+            this.slutbetyg = slutBetyg;
+            this.Lärare = lärare;
+            this.Studenter = studenter;
+
+        }
 
         static List<Kurs> kursLista { get; set; } = new List<Kurs>();
 

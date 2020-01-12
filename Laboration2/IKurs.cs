@@ -14,7 +14,6 @@ namespace Laboration2
         string kursID { get; set; }
         string lärarlagID { get; set; }
         string slutbetyg { get; set; }
-        string[] deltagandeStudenter { get; set; }
 
        
 

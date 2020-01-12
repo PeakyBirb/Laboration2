@@ -47,7 +47,7 @@ namespace Laboration2
 
         private void Avsluta_Click(object sender, EventArgs e)
         {
-            
+            Environment.Exit(1);
         }
 
         private void _Välkommen_Load(object sender, EventArgs e)

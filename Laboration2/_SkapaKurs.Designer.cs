@@ -31,10 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.VäljStudenterText = new System.Windows.Forms.Label();
             this.StudenterListBox = new System.Windows.Forms.ListBox();
-            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.personBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.KursnamnText = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.KursnamnTextBox = new System.Windows.Forms.TextBox();
             this.KlarKnapp = new System.Windows.Forms.Button();
             this.StartdatumText = new System.Windows.Forms.Label();
             this.StartdatumVäljare = new System.Windows.Forms.DateTimePicker();
@@ -42,6 +40,8 @@
             this.Slutdatum = new System.Windows.Forms.Label();
             this.LärareListBox = new System.Windows.Forms.ListBox();
             this.LärarlagText = new System.Windows.Forms.Label();
+            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.personBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource1)).BeginInit();
@@ -69,31 +69,24 @@
             this.StudenterListBox.TabIndex = 1;
             this.StudenterListBox.SelectedIndexChanged += new System.EventHandler(this.StudenterListBox_SelectedIndexChanged);
             // 
-            // personBindingSource
-            // 
-            this.personBindingSource.DataSource = typeof(Laboration2.Person);
-            // 
-            // personBindingSource1
-            // 
-            this.personBindingSource1.DataSource = typeof(Laboration2.Person);
-            // 
             // KursnamnText
             // 
             this.KursnamnText.AutoSize = true;
             this.KursnamnText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KursnamnText.Location = new System.Drawing.Point(41, 55);
+            this.KursnamnText.Location = new System.Drawing.Point(41, 52);
             this.KursnamnText.Name = "KursnamnText";
             this.KursnamnText.Size = new System.Drawing.Size(67, 16);
             this.KursnamnText.TabIndex = 0;
             this.KursnamnText.Text = "Kursnamn";
             this.KursnamnText.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // KursnamnTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(137, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 2;
+            this.KursnamnTextBox.Location = new System.Drawing.Point(137, 51);
+            this.KursnamnTextBox.Name = "KursnamnTextBox";
+            this.KursnamnTextBox.Size = new System.Drawing.Size(200, 20);
+            this.KursnamnTextBox.TabIndex = 2;
+            this.KursnamnTextBox.TextChanged += new System.EventHandler(this.KursnamnTextBox_TextChanged);
             // 
             // KlarKnapp
             // 
@@ -148,6 +141,7 @@
             this.LärareListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.LärareListBox.Size = new System.Drawing.Size(277, 95);
             this.LärareListBox.TabIndex = 1;
+            this.LärareListBox.SelectedIndexChanged += new System.EventHandler(this.LärareListBox_SelectedIndexChanged);
             // 
             // LärarlagText
             // 
@@ -159,6 +153,14 @@
             this.LärarlagText.TabIndex = 0;
             this.LärarlagText.Text = "Lärare som undervisar i kursen (lärarlag)";
             this.LärarlagText.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // personBindingSource
+            // 
+            this.personBindingSource.DataSource = typeof(Laboration2.Person);
+            // 
+            // personBindingSource1
+            // 
+            this.personBindingSource1.DataSource = typeof(Laboration2.Person);
             // 
             // studentBindingSource
             // 
@@ -172,7 +174,7 @@
             this.Controls.Add(this.SlutdatumVäljare);
             this.Controls.Add(this.StartdatumVäljare);
             this.Controls.Add(this.KlarKnapp);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.KursnamnTextBox);
             this.Controls.Add(this.LärareListBox);
             this.Controls.Add(this.StudenterListBox);
             this.Controls.Add(this.Slutdatum);
@@ -196,7 +198,7 @@
         private System.Windows.Forms.Label VäljStudenterText;
         private System.Windows.Forms.ListBox StudenterListBox;
         private System.Windows.Forms.Label KursnamnText;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox KursnamnTextBox;
         private System.Windows.Forms.Button KlarKnapp;
         private System.Windows.Forms.Label StartdatumText;
         private System.Windows.Forms.DateTimePicker StartdatumVäljare;
