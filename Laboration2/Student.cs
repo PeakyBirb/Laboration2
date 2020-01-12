@@ -8,15 +8,15 @@ namespace Laboration2
 {
     public class Student : Person
     {
-        public override string personnummer { get { return personnummer; } set { personnummer = value; } }
-        public override string förnamn { get { return förnamn; } set { förnamn = value; } }
-        public override string efternamn { get { return efternamn; } set { efternamn = value; } }
-        public override string adress { get { return adress; } set { adress= value; } }
-        public override string telefonnummer { get { return telefonnummer; } set { telefonnummer = value; } }
-        public override string epostadress { get { return epostadress; } set { epostadress = value; } }
-        public override string lösenord { get { return personnummer; } set { lösenord = value; } }
+        public override string personnummer { get; set; }
+        public override string förnamn { get; set; }
+        public override string efternamn { get; set; }
+        public override string adress { get; set; }
+        public override string telefonnummer { get; set; }
+        public override string epostadress { get; set; }
+        public override string lösenord { get; set; }
 
-        private string studentID { get { return studentID; } set { studentID = value; } }
+        private string studentID { get; set; }
 
         public Student(string personnummer, string förnamn, string efternamn, string adress, string telefonnummer, string epostadress, string lösenord, string studentID)
         {
@@ -31,9 +31,15 @@ namespace Laboration2
         }
 
 
-        List<Student> studentLista = new List<Student>();
-        
-        
+        static List<Student> studentLista { get; set; } = new List<Student>();
+
+        public static List<Student> StudentLista()
+        {
+            studentLista.Add(new Student("199001011111", "Lisa", "Svensson", "Rönngatan 4", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "s168820"));
+            return studentLista;
+        }
+
+
         /*public void SkapaStudent()
         {
             studentLista.Add(new Student("199001011111", "Lisa", "Svensson", "Rönngatan 4", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "s168820"));

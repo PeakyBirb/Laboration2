@@ -61,16 +61,12 @@
             // 
             // StudenterListBox
             // 
-            this.StudenterListBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.personBindingSource, "personID", true));
-            this.StudenterListBox.DataSource = this.personBindingSource;
-            this.StudenterListBox.DisplayMember = "förnamn";
             this.StudenterListBox.FormattingEnabled = true;
             this.StudenterListBox.Location = new System.Drawing.Point(44, 295);
             this.StudenterListBox.Name = "StudenterListBox";
             this.StudenterListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.StudenterListBox.Size = new System.Drawing.Size(293, 95);
             this.StudenterListBox.TabIndex = 1;
-            this.StudenterListBox.ValueMember = "efternamn";
             this.StudenterListBox.SelectedIndexChanged += new System.EventHandler(this.StudenterListBox_SelectedIndexChanged);
             // 
             // personBindingSource

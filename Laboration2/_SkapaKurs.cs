@@ -24,7 +24,8 @@ namespace Laboration2
 
         private void _SkapaKurs_Load(object sender, EventArgs e)
         {
-            
+                ListBox VisaStudenterlistBox = new ListBox();
+                VisaStudenterlistBox.DataSource = Student.StudentLista();
         }
 
         private void StudenterListBox_SelectedIndexChanged(object sender, EventArgs e)

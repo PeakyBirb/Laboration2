@@ -21,6 +21,7 @@ namespace Laboration2
         {
             _SkapaKurs Form2 = new _SkapaKurs();
             Form2.Show();
+            
         }
 
         private void SkapaKursPanel_Paint(object sender, PaintEventArgs e)
