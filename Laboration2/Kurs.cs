@@ -10,8 +10,9 @@ namespace Laboration2
     {
         public DateTime StartDatum { get; set; }
         public DateTime SlutDatum { get; set; }
-        public string[] möjligaBetyg { get; set; }
+        public string möjligaBetyg { get; set; }
         public string kursID { get; set; }
+        public string kursnamn { get; set; }
         public string lärarlagID { get; set; }
         public string slutbetyg { get; set; }
 
@@ -36,12 +37,13 @@ namespace Laboration2
 
         }
 
-        public Kurs(DateTime startdatum, DateTime slutdatum, string[] möjligabetyg, string kursID, string lärarlagID, string slutBetyg, List<Lärare> lärare, List<Student> studenter)
+        public Kurs(DateTime startdatum, DateTime slutdatum, string möjligabetyg, string kursID, string kursnamn, string lärarlagID, string slutBetyg, List<Lärare> lärare, List<Student> studenter)
         {
             this.StartDatum = startdatum;
             this.SlutDatum = slutdatum;
             this.möjligaBetyg = möjligabetyg;
             this.kursID = kursID;
+            this.kursnamn = kursnamn;
             this.lärarlagID = lärarlagID;
             this.slutbetyg = slutBetyg;
             this.Lärare = lärare;
@@ -50,9 +52,13 @@ namespace Laboration2
         }
 
         static List<Kurs> kursLista { get; set; } = new List<Kurs>();
+        
 
         public static void LäggTillNyKurs()
         {
+
+
+
 
         }
 

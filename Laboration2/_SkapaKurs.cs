@@ -15,13 +15,16 @@ namespace Laboration2
 
         public _SkapaKurs()
         {
+            
             InitializeComponent();
+            //STUDENT
             ListBox StudenterlistBox = new ListBox();
             StudenterListBox.Items.Clear();
 
             StudenterListBox.DisplayMember = "förnamn";
             StudenterListBox.ValueMember = "studentID";
 
+            //LÄRARE
             ListBox LärareListBox = new ListBox();
             LärareListBox.Items.Clear();
 
@@ -58,6 +61,8 @@ namespace Laboration2
             LärareListBox.Sorted = true;
             LärareListBox.TopIndex = 0;
 
+
+
         }
 
         private void StudenterListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -72,6 +77,17 @@ namespace Laboration2
 
         private void KursnamnTextBox_TextChanged(object sender, EventArgs e)
         {
+            
+        }
+
+        private void KlarKnapp_Click(object sender, EventArgs e)
+        {
+            string kursnamn = KursnamnTextBox.Text;
+            DateTime StartDatum = StartdatumVäljare.Value;
+            DateTime SlutDatum = SlutdatumVäljare.Value;
+
+
+            Kurs nyKurs = new Kurs(StartDatum, );
 
         }
     }

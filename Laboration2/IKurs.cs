@@ -10,8 +10,9 @@ namespace Laboration2
     {
         DateTime StartDatum { get; set; }
         DateTime SlutDatum { get; set; }
-        string[] möjligaBetyg{ get; set; }
+        string möjligaBetyg{ get; set; }
         string kursID { get; set; }
+        string kursnamn { get; set; }
         string lärarlagID { get; set; }
         string slutbetyg { get; set; }
 

@@ -96,6 +96,7 @@
             this.KlarKnapp.TabIndex = 3;
             this.KlarKnapp.Text = "Klar";
             this.KlarKnapp.UseVisualStyleBackColor = true;
+            this.KlarKnapp.Click += new System.EventHandler(this.KlarKnapp_Click);
             // 
             // StartdatumText
             // 
@@ -198,7 +199,6 @@
         private System.Windows.Forms.Label VäljStudenterText;
         private System.Windows.Forms.ListBox StudenterListBox;
         private System.Windows.Forms.Label KursnamnText;
-        private System.Windows.Forms.TextBox KursnamnTextBox;
         private System.Windows.Forms.Button KlarKnapp;
         private System.Windows.Forms.Label StartdatumText;
         private System.Windows.Forms.DateTimePicker StartdatumVäljare;
@@ -209,5 +209,6 @@
         private System.Windows.Forms.BindingSource personBindingSource;
         private System.Windows.Forms.BindingSource studentBindingSource;
         private System.Windows.Forms.BindingSource personBindingSource1;
+        public System.Windows.Forms.TextBox KursnamnTextBox;
     }
 }
