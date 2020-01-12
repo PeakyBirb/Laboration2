@@ -14,7 +14,22 @@ namespace Laboration2
         [STAThread]
         static void Main()
         {
-            
+            Student.studentLista.Add(new Student("199001011111", "Lisa", "Svensson", "Rönngatan 4", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "s168820"));
+            Student.studentLista.Add(new Student("199001011111", "Korv", "Svensson", "Rönngatan 4", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "s168820"));
+
+            Lärare.lärareLista.Add(new Lärare("199001011111", "Sisa", "Evensson", "Rögatan 56", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "L168820"));
+            Lärare.lärareLista.Add(new Lärare("199001011111", "Sisa", "Evensson", "Rögatan 56", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "L168820"));
+            Lärare.lärareLista.Add(new Lärare("199001011111", "Sisa", "Evensson", "Rögatan 56", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "L168820"));
+            Lärare.lärareLista.Add(new Lärare("199001011111", "Sisa", "Evensson", "Rögatan 56", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "L168820"));
+            Lärare.lärareLista.Add(new Lärare("199001011111", "Sisa", "Evensson", "Rögatan 56", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "L168820"));
+            Lärare.lärareLista.Add(new Lärare("199001011111", "Sisa", "Evensson", "Rögatan 56", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "L168820"));
+            Lärare.lärareLista.Add(new Lärare("199001011111", "Sisa", "Evensson", "Rögatan 56", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "L168820"));
+            Lärare.lärareLista.Add(new Lärare("199001011111", "Sisa", "Evensson", "Rögatan 56", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "L168820"));
+            Lärare.lärareLista.Add(new Lärare("199001011111", "Sisa", "Evensson", "Rögatan 56", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "L168820"));
+
+
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new _Välkommen());

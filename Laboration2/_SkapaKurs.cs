@@ -88,10 +88,32 @@ namespace Laboration2
             string betyg = "-";
             string kursID = KursIDTextBox.Text;
             string lärarlagID = LärarlagIDTextBox.Text;
-            List<Lärare> lärarlag = ;
-            List<Student> studentlag = ;
+            var lärarlag = LärareListBox.SelectedItems;
+            var studentlag = StudenterListBox.SelectedItems;
 
-            Kurs nyKurs = new Kurs(startDatum, slutDatum, betyg, kursID, kursnamn, lärarlagID, lärarlag, studentlag);
+            //LÄRARMATCHNING
+            var lärareLista = Lärare.LärareLista();
+            List<Lärare> Lärarlag = new List<Lärare>();
+
+            foreach (var item in lärareLista)
+            {
+                foreach (var item2 in lärarlag)
+                {
+                    if (item2.ToString().ToUpper().Contains(item.LärarID.ToString().ToUpper()))
+                    {
+                        Lärarlag.Add(item);
+                    }
+                }
+            }
+
+            //STUDENTMATCHNING
+            var studentLista = Student.StudentLista();
+
+
+
+
+
+            Kurs nyKurs = new Kurs(startDatum, slutDatum, betyg, kursID, kursnamn, lärarlagID, Lärarlag, Studentlag);
 
         }
 
