@@ -83,11 +83,20 @@ namespace Laboration2
         private void KlarKnapp_Click(object sender, EventArgs e)
         {
             string kursnamn = KursnamnTextBox.Text;
-            DateTime StartDatum = StartdatumVäljare.Value;
-            DateTime SlutDatum = SlutdatumVäljare.Value;
+            DateTime startDatum = StartdatumVäljare.Value;
+            DateTime slutDatum = SlutdatumVäljare.Value;
+            string betyg = "-";
+            string kursID = KursIDTextBox.Text;
+            string lärarlagID = LärarlagIDTextBox.Text;
+            List<Lärare> lärarlag = ;
+            List<Student> studentlag = ;
 
+            Kurs nyKurs = new Kurs(startDatum, slutDatum, betyg, kursID, kursnamn, lärarlagID, lärarlag, studentlag);
 
-            Kurs nyKurs = new Kurs(StartDatum, );
+        }
+
+        private void KursIDTextBox_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

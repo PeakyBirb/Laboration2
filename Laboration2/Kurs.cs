@@ -8,46 +8,44 @@ namespace Laboration2
 {
     class Kurs : IKurs
     {
-        public DateTime StartDatum { get; set; }
-        public DateTime SlutDatum { get; set; }
-        public string möjligaBetyg { get; set; }
+        public DateTime startDatum { get; set; }
+        public DateTime slutDatum { get; set; }
+        public string betyg { get; set; }
         public string kursID { get; set; }
         public string kursnamn { get; set; }
         public string lärarlagID { get; set; }
-        public string slutbetyg { get; set; }
 
 
-        private List<Lärare> Lärare = new List<Lärare>();
+        private List<Lärare> lärarlag = new List<Lärare>();
 
         public List<Lärare> HämtaLärare()
         {
-            return Lärare;
+            return lärarlag;
         }
 
-        private List<Student> Studenter = new List<Student>();
+        private List<Student> studentlag = new List<Student>();
 
         public List<Student> HämtaStudent()
         {
-            return Studenter;
+            return studentlag;
         }
 
-        public Kurs(DateTime StartDatum, DateTime SlutDatum)
+        public Kurs(DateTime startDatum, DateTime slutDatum)
         {
-            this.StartDatum = StartDatum;
+            this.startDatum = startDatum;
 
         }
 
-        public Kurs(DateTime startdatum, DateTime slutdatum, string möjligabetyg, string kursID, string kursnamn, string lärarlagID, string slutBetyg, List<Lärare> lärare, List<Student> studenter)
+        public Kurs(DateTime startdatum, DateTime slutdatum, string betyg, string kursID, string kursnamn, string lärarlagID, List<Lärare> lärare, List<Student> studenter)
         {
-            this.StartDatum = startdatum;
-            this.SlutDatum = slutdatum;
-            this.möjligaBetyg = möjligabetyg;
+            this.startDatum = startdatum;
+            this.slutDatum = slutdatum;
+            this.betyg = betyg;
             this.kursID = kursID;
             this.kursnamn = kursnamn;
             this.lärarlagID = lärarlagID;
-            this.slutbetyg = slutBetyg;
-            this.Lärare = lärare;
-            this.Studenter = studenter;
+            this.lärarlag = lärare;
+            this.studentlag = studenter;
 
         }
 
