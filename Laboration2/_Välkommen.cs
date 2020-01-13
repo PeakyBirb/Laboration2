@@ -57,7 +57,8 @@ namespace Laboration2
 
         private void RedigeraKurs_Click(object sender, EventArgs e)
         {
-
+            _RedigeraKurs Form = new _RedigeraKurs();
+            Form.Show();
         }
     }
 }

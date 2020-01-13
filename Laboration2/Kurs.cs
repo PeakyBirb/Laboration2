@@ -49,19 +49,12 @@ namespace Laboration2
 
         }
 
-        static List<Kurs> kursLista { get; set; } = new List<Kurs>();
+        private static List<Kurs> kursLista { get; set; } = new List<Kurs>();
         
-
-        public static void LäggTillNyKurs()
+        public static List<Kurs> HämtaKursLista() 
         {
-
-
-
-
+            return kursLista;
         }
-
-
-
 
 
 
