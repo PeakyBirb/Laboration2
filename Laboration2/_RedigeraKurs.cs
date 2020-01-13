@@ -73,5 +73,40 @@ namespace Laboration2
         {
 
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartdatumVäljare_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KursNamnTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StudenterListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LärarlagText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LärareListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SparaÄndringar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
