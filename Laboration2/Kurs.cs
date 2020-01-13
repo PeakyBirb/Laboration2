@@ -15,6 +15,15 @@ namespace Laboration2
         public string kursnamn { get; set; }
         public string lärarlagID { get; set; }
 
+        public string Kursnamn
+        {
+            get { return kursnamn; }
+        }
+        public string KursID
+        {
+            get { return kursID; }
+        }
+
 
         private List<Lärare> lärarlag = new List<Lärare>();
 

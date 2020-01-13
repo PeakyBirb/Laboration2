@@ -32,9 +32,17 @@ namespace Laboration2
 
             foreach (var item in kursLista)
             {
-                    if (valdKurs.ToString().ToUpper().Contains(item.kursID.ToString().ToUpper()))
+                    if (valdKurs == item)
                     {
                         Kurs.TaBortKurs(item);
+
+                        VisaAllaKurserListBox.DataSource = null;
+                        VisaAllaKurserListBox.DataSource = kursLista;
+
+                        VisaAllaKurserListBox.DisplayMember = "Kursnamn";
+                        VisaAllaKurserListBox.DisplayMember = "KursID";
+
+                        break;
                     }
                 
             }
@@ -52,13 +60,13 @@ namespace Laboration2
         {
             var kursLista = Kurs.HämtaKursLista();
 
-            foreach (var item in kursLista)
-            {
-                VisaAllaKurserListBox.Items.Add(String.Format("{0} {1}", item.kursID.ToUpper(), item.kursnamn.ToUpperInvariant()));
-            }
 
-            VisaAllaKurserListBox.Sorted = true;
-            VisaAllaKurserListBox.TopIndex = 0;
+            VisaAllaKurserListBox.DataSource = kursLista;
+
+
+            VisaAllaKurserListBox.DisplayMember = "Kursnamn";
+            VisaAllaKurserListBox.ValueMember = "KursID";
+
         }
 
         private void VisaAllaKurserListBox_SelectedIndexChanged(object sender, EventArgs e)
