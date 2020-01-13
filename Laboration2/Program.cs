@@ -47,7 +47,7 @@ namespace Laboration2
             
             kursLista.Add(new Kurs(tidNu, tidNu, "-", "SYKUN1", "Sykunskap 1", "kjuy769", lärarlag1, studentlag1));
 
-
+            kursLista.Add(new Kurs(tidNu, tidNu, "-", "SYKUN2", "Sykunskap 2", "kjuy769", lärarlag1, studentlag1));
 
 
 

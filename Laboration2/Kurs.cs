@@ -63,7 +63,12 @@ namespace Laboration2
 
         public static void TaBortKurs(Kurs nyKurs)
         {
-            kursLista.Remove(nyKurs);        
+            //kursLista.Remove(nyKurs);
+
+
+            var templista = kursLista;
+            templista.Remove(nyKurs);
+            kursLista = templista;
         }
 
         public List<Kurs> RedigeraKurs(Kurs kursAttRedigera, List<Kurs> listaAttRedigeraKurs)
