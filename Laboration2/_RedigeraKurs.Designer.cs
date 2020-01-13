@@ -40,9 +40,9 @@
             this.SlutdatumVäljare = new System.Windows.Forms.DateTimePicker();
             this.VäljStudenterText = new System.Windows.Forms.Label();
             this.StudenterListBox = new System.Windows.Forms.ListBox();
-            this.LärarlagText = new System.Windows.Forms.Label();
             this.LärareListBox = new System.Windows.Forms.ListBox();
             this.SparaÄndringar = new System.Windows.Forms.Button();
+            this.LärarlagText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // VisaAllaKurserListBox
@@ -158,17 +158,6 @@
             this.StudenterListBox.TabIndex = 11;
             this.StudenterListBox.SelectedIndexChanged += new System.EventHandler(this.StudenterListBox_SelectedIndexChanged);
             // 
-            // LärarlagText
-            // 
-            this.LärarlagText.AutoSize = true;
-            this.LärarlagText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LärarlagText.Location = new System.Drawing.Point(451, 204);
-            this.LärarlagText.Name = "LärarlagText";
-            this.LärarlagText.Size = new System.Drawing.Size(251, 16);
-            this.LärarlagText.TabIndex = 12;
-            this.LärarlagText.Text = "Lärare som undervisar i kursen (lärarlag):";
-            this.LärarlagText.Click += new System.EventHandler(this.LärarlagText_Click);
-            // 
             // LärareListBox
             // 
             this.LärareListBox.FormattingEnabled = true;
@@ -189,14 +178,24 @@
             this.SparaÄndringar.UseVisualStyleBackColor = true;
             this.SparaÄndringar.Click += new System.EventHandler(this.SparaÄndringar_Click);
             // 
+            // LärarlagText
+            // 
+            this.LärarlagText.AutoSize = true;
+            this.LärarlagText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LärarlagText.Location = new System.Drawing.Point(451, 196);
+            this.LärarlagText.Name = "LärarlagText";
+            this.LärarlagText.Size = new System.Drawing.Size(275, 16);
+            this.LärarlagText.TabIndex = 15;
+            this.LärarlagText.Text = "Redigera vilka lärare som undervisar kursen:";
+            // 
             // _RedigeraKurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LärarlagText);
             this.Controls.Add(this.SparaÄndringar);
             this.Controls.Add(this.LärareListBox);
-            this.Controls.Add(this.LärarlagText);
             this.Controls.Add(this.StudenterListBox);
             this.Controls.Add(this.VäljStudenterText);
             this.Controls.Add(this.SlutdatumVäljare);
@@ -231,8 +230,8 @@
         private System.Windows.Forms.DateTimePicker SlutdatumVäljare;
         private System.Windows.Forms.Label VäljStudenterText;
         private System.Windows.Forms.ListBox StudenterListBox;
-        private System.Windows.Forms.Label LärarlagText;
         private System.Windows.Forms.ListBox LärareListBox;
         private System.Windows.Forms.Button SparaÄndringar;
+        private System.Windows.Forms.Label LärarlagText;
     }
 }
