@@ -56,9 +56,37 @@ namespace Laboration2
             return kursLista;
         }
 
+        public static void LäggTillKurs(Kurs nyKurs)
+        {
+            kursLista.Add(nyKurs);
+        }
 
+        public static void TaBortKurs(Kurs nyKurs)
+        {
+            kursLista.Remove(nyKurs);        
+        }
 
+        public List<Kurs> RedigeraKurs(Kurs kursAttRedigera, List<Kurs> listaAttRedigeraKurs)
+        {
 
+            foreach (var item in listaAttRedigeraKurs)
+            {
+                if (kursAttRedigera.kursID == item.kursID)
+                {
+                    item.kursnamn = kursAttRedigera.kursnamn;
+                    item.startDatum = kursAttRedigera.startDatum;
+                    item.slutDatum = kursAttRedigera.slutDatum;
+                    item.betyg = kursAttRedigera.betyg;
+                    item.kursID = kursAttRedigera.kursID;
+                    item.lärarlagID = kursAttRedigera.lärarlagID;
+                    item.studentlag = kursAttRedigera.studentlag;
+                    item.lärarlag = kursAttRedigera.lärarlag;
+
+                    return listaAttRedigeraKurs;
+                }
+            }
+            return null; ;
+        }
     }
 
 }

@@ -30,32 +30,22 @@ namespace Laboration2
             
 
             
-            public Kurs(DateTime startdatum, DateTime slutdatum, string betyg, string kursID, string kursnamn, string lärarlagID, List<Lärare> lärare, List<Student> studenter)
-            {
-                this.startDatum = startdatum;
-                this.slutDatum = slutdatum;
-                this.betyg = betyg;
-                this.kursID = kursID;
-                this.kursnamn = kursnamn;
-                this.lärarlagID = lärarlagID;
-                this.lärarlag = lärare;
-                this.studentlag = studenter;
-
-            }
 
             var kursLista = Kurs.HämtaKursLista();
             var tidNu = DateTime.Now;
-            List<Lärare> lärarlag1 = new List<Lärare>;
+            
+            List<Lärare> lärarlag1 = new List<Lärare>();
             lärarlag1.Add(new Lärare("196605085555", "Sissian", "Zonol", "Wistberg 9", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "L16666"));
-            lärarlag1.
+            lärarlag1.Add(new Lärare("194205084747", "Fílippi", "Conolip", "Bilgatan 5", "0721489696", "lasvensson@gmail.com", "hbvjucyghu68", "L18888"));
 
-            kursLista.Add(new Kurs(tidNu, tidNu, "-", "SYKUN1", "Sykunskap 1", "kjuy769", (),()));
-
-
-    
-            { 2020 - 01 - 22 15:32:59}
-
-
+            List<Student> studentlag1 = new List<Student>();
+            studentlag1.Add(new Student("198502069999", "Lisa", "Svensson", "Fiskarevägen 8b", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "s148820"));
+            studentlag1.Add(new Student("199001011111", "Korvi", "Sveni", "Rönngatan 4", "0721489696", "svenssonian@gmail.com", "hbvjujhgjkk", "s168880"));
+            studentlag1.Add(new Student("195862304878", "Nyr", "Lostuio", "Tistelvägen 4", "0721584696", "nsson@gmail.com", "hbvju68", "s181820"));
+            studentlag1.Add(new Student("198502062085", "Nombi", "Komf", "Tistelvägen 4", "0721584696", "nsson@gmail.com", "hbvju68", "s138820"));
+            
+            
+            kursLista.Add(new Kurs(tidNu, tidNu, "-", "SYKUN1", "Sykunskap 1", "kjuy769", lärarlag1, studentlag1));
 
 
 

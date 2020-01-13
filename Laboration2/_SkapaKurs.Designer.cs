@@ -40,13 +40,13 @@
             this.Slutdatum = new System.Windows.Forms.Label();
             this.LärareListBox = new System.Windows.Forms.ListBox();
             this.LärarlagText = new System.Windows.Forms.Label();
-            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.personBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.KursIDTextBox = new System.Windows.Forms.TextBox();
             this.LabelKursID = new System.Windows.Forms.Label();
             this.LärarlagIDTextBox = new System.Windows.Forms.TextBox();
             this.labelLärarlagID = new System.Windows.Forms.Label();
+            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.personBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
@@ -77,7 +77,7 @@
             // 
             this.KursnamnText.AutoSize = true;
             this.KursnamnText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KursnamnText.Location = new System.Drawing.Point(41, 52);
+            this.KursnamnText.Location = new System.Drawing.Point(41, 51);
             this.KursnamnText.Name = "KursnamnText";
             this.KursnamnText.Size = new System.Drawing.Size(70, 16);
             this.KursnamnText.TabIndex = 0;
@@ -159,18 +159,6 @@
             this.LärarlagText.Text = "Lärare som undervisar i kursen (lärarlag):";
             this.LärarlagText.Click += new System.EventHandler(this.label1_Click);
             // 
-            // personBindingSource
-            // 
-            this.personBindingSource.DataSource = typeof(Laboration2.Person);
-            // 
-            // personBindingSource1
-            // 
-            this.personBindingSource1.DataSource = typeof(Laboration2.Person);
-            // 
-            // studentBindingSource
-            // 
-            this.studentBindingSource.DataSource = typeof(Laboration2.Student);
-            // 
             // KursIDTextBox
             // 
             this.KursIDTextBox.Location = new System.Drawing.Point(137, 89);
@@ -208,6 +196,18 @@
             this.labelLärarlagID.TabIndex = 0;
             this.labelLärarlagID.Text = "LärarlagID:";
             this.labelLärarlagID.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // personBindingSource
+            // 
+            this.personBindingSource.DataSource = typeof(Laboration2.Person);
+            // 
+            // personBindingSource1
+            // 
+            this.personBindingSource1.DataSource = typeof(Laboration2.Person);
+            // 
+            // studentBindingSource
+            // 
+            this.studentBindingSource.DataSource = typeof(Laboration2.Student);
             // 
             // _SkapaKurs
             // 
