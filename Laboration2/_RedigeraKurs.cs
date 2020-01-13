@@ -32,7 +32,7 @@ namespace Laboration2
 
             foreach (var item in kursLista)
             {
-                    if (valdKurs.ToString().ToUpper().Contains(item.kursnamn.ToString().ToUpper()))
+                    if (valdKurs.ToString().ToUpper().Contains(item.kursID.ToString().ToUpper()))
                     {
                         Kurs.TaBortKurs(item);
                     }
