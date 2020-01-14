@@ -8,13 +8,26 @@ namespace Laboration2
 {
     class Kurs : IKurs
     {
-        public DateTime startDatum { get; set; }
-        public DateTime slutDatum { get; set; }
-        public string betyg { get; set; }
-        public string kursID { get; set; }
-        public string kursnamn { get; set; }
-        public string lärarlagID { get; set; }
+        public DateTime startDatum { get; private set; }
+        public DateTime slutDatum { get; private set; }
+        public string betyg { get; private set; }
+        public string kursID { get; private set; }
+        public string kursnamn { get; private set; }
+        public string lärarlagID { get; private set; }
 
+
+        public DateTime StartDatum
+        {
+            get { return startDatum; }
+        }
+        public DateTime SlutDatum
+        {
+            get { return slutDatum; }
+        }
+        public string Betyg
+        {
+            get { return betyg; }
+        }
         public string Kursnamn
         {
             get { return kursnamn; }
@@ -22,6 +35,10 @@ namespace Laboration2
         public string KursID
         {
             get { return kursID; }
+        }
+        public string LärarlagID
+        {
+            get { return lärarlagID; }
         }
 
 
