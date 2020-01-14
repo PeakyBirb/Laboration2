@@ -8,13 +8,13 @@ namespace Laboration2
 {
     public interface IPerson
     {
-        string personnummer { get; set; }
-        string förnamn { get; set; }
-        string efternamn { get; set; }
-        string adress { get; set; }
-        string telefonnummer { get; set; }
-        string epostadress { get; set; }
-        string lösenord { get; set; }
+        string personnummer { get; }
+        string förnamn { get; }
+        string efternamn { get; }
+        string adress { get; }
+        string telefonnummer { get; }
+        string epostadress { get; }
+        string lösenord { get; }
 
         string HämtaPersonuppgifter (string personID);
 

@@ -8,7 +8,7 @@ namespace Laboration2
 {
     public class Student : Person
     {
-        public override string personnummer { get; set; }
+        public string personnummer { get; private set; }
         public override string förnamn { get; set; }
         public override string efternamn { get; set; }
         public override string adress { get; set; }
@@ -17,6 +17,10 @@ namespace Laboration2
         public override string lösenord { get; set; }
 
         public string studentID { get; set; }
+
+        
+
+
 
         //Detta är konstruktor
         public Student(string personnummer, string förnamn, string efternamn, string adress, string telefonnummer, string epostadress, string lösenord, string studentID)
@@ -39,12 +43,6 @@ namespace Laboration2
             return studentLista;
         }
 
-
-        /*public void SkapaStudent()
-        {
-            studentLista.Add(new Student("199001011111", "Lisa", "Svensson", "Rönngatan 4", "0721489696", "lisasvensson@gmail.com", "hbvjucyghu68", "s168820"));
-        }
-        */
 
         public override string HämtaPersonuppgifter(string personID)
         {
