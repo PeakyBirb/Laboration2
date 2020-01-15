@@ -8,24 +8,54 @@ namespace Laboration2
 {
     public abstract class Person : IPerson
     {
-        public virtual string personnummer { get; }
-        public virtual string förnamn { get; }
-        public virtual string efternamn { get; }
-        public virtual string adress { get; }
-        public virtual string telefonnummer { get; }
-        public virtual string epostadress { get; }
-        public virtual string lösenord { get; }
+        private string personnummer;
+        public string GetPersonnummer()
+        {
+            return personnummer;
+        }
 
+        private string förnamn;
+        public string GetFörnamn()
+        {
+            return förnamn;
+        }
 
-        
+        private string efternamn;
+        public string GetEfternamn()
+        {
+            return efternamn;
+        }
 
+        private string adress;
+        public string GetAdress()
+        {
+            return adress;
+        }
 
+        private string telefonnummer;
+        public string GetTelefonnummer()
+        {
+            return telefonnummer;
+        }
 
+        private string epostadress;
+        public string GetEpostadress()
+        {
+            return epostadress;
+        }
+
+        private string lösenord;
+        public string GetLösenord()
+        {
+            return lösenord;
+        }
 
 
         public virtual string HämtaPersonuppgifter(string personID)
         {
             throw new NotImplementedException();
         }
+
+
     }
 }

@@ -38,29 +38,22 @@ namespace Laboration2
         }
 
         private void _SkapaKurs_Load(object sender, EventArgs e)
-        {   
-            //STUDENTLISTA
-            var studentLista = Student.StudentLista();
-
-            foreach (var item in studentLista)
-            {
-                StudenterListBox.Items.Add(String.Format("{0} {1} {2}", item.studentID.ToUpper(), item.förnamn.ToUpperInvariant(), item.efternamn.ToUpperInvariant()));
-            }
-
-            StudenterListBox.Sorted = true;
-            StudenterListBox.TopIndex = 0;
+        {
+                //STUDENTLISTA
+                var studentLista = Student.StudentLista;
+                
+                StudenterListBox.DataSource = studentLista;
+                StudenterListBox.DisplayMember = "Förnamn";
+                StudenterListBox.ValueMember = "StudentID";
+                StudenterListBox.ClearSelected();
 
             //LÄRARLISTA
-            var lärarLista = Lärare.LärareLista();
+            var lärarLista = Lärare.LärareLista;
 
-            foreach (var item in lärarLista)
-            {
-                LärareListBox.Items.Add(String.Format("{0} {1} {2}", item.LärarID.ToUpper(), item.förnamn.ToUpperInvariant(), item.efternamn.ToUpperInvariant()));
-            }
-
-            LärareListBox.Sorted = true;
-            LärareListBox.TopIndex = 0;
-
+            LärareListBox.DataSource = lärarLista;
+            LärareListBox.DisplayMember = "Förnamn";
+            LärareListBox.ValueMember = "LärarID";
+            LärareListBox.ClearSelected();
 
 
         }
@@ -92,7 +85,7 @@ namespace Laboration2
             var studentlag = StudenterListBox.SelectedItems;
 
             //LÄRARMATCHNING
-            var lärareLista = Lärare.LärareLista();
+            var lärareLista = Lärare.LärareLista;
             List<Lärare> Lärarlag = new List<Lärare>();
 
             foreach (var item in lärareLista)
@@ -107,14 +100,14 @@ namespace Laboration2
             }
 
             //STUDENTMATCHNING
-            var studentLista = Student.StudentLista();
+            var studentLista = Student.StudentLista;
             List<Student> Studentlag = new List<Student>();
 
             foreach (var item in studentLista)
             {
                 foreach (var item2 in studentlag)
                 {
-                    if (item2.ToString().ToUpper().Contains(item.studentID.ToString().ToUpper()))
+                    if (item2.ToString().ToUpper().Contains(item.StudentID.ToString().ToUpper()))
                     {
                         Studentlag.Add(item);
                     }

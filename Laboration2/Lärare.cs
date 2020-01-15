@@ -8,19 +8,89 @@ namespace Laboration2
 {
     public class Lärare : Person
     {
-        public override string personnummer { get; set; }
-        public override string förnamn { get; set; }
-        public override string efternamn { get; set; }
-        public override string adress { get; set; }
-        public override string telefonnummer { get; set; }
-        public override string epostadress { get; set; }
-        public override string lösenord { get; set; }
+        private static List<Lärare> lärareLista = new List<Lärare>();
 
-        public string LärarID { get; set; }
+        public static List<Lärare> LärareLista
+        {
+            get { return lärareLista; }
+            set { lärareLista = value; }
+        }
 
 
 
-        public virtual string HämtaPersonuppgifter(string personID)
+        private string personnummer;
+
+        public string Personnummer
+        {
+            get { return personnummer; }
+            set { personnummer = value; }
+        }
+
+
+        private string förnamn;
+
+        public string Förnamn
+        {
+            get { return förnamn; }
+            set { förnamn = value; }
+        }
+
+        private string efternamn;
+
+        public string Efternamn
+        {
+            get { return efternamn; }
+            set { efternamn = value; }
+        }
+
+
+        private string adress;
+
+        public string Adress
+        {
+            get { return adress; }
+            set { adress = value; }
+        }
+
+        private string telefonnummer;
+
+        public string Telefonnummer
+        {
+            get { return telefonnummer; }
+            set { telefonnummer = value; }
+        }
+
+        private string epostadress;
+
+        public string Epostadress
+        {
+            get { return epostadress; }
+            set { epostadress = value; }
+        }
+
+        private string lösenord;
+
+        public string Lösenord
+        {
+            get { return lösenord; }
+            set { lösenord = value; }
+        }
+
+
+        private string lärarID;
+
+        public string LärarID
+        {
+            get { return lärarID; }
+            set { lärarID = value; }
+        }
+
+        public string LärareFullName
+        {
+            get { return Förnamn + " " + Efternamn; }
+        }
+
+        public override string HämtaPersonuppgifter(string personID)
         {
             throw new NotImplementedException();
         }
@@ -34,16 +104,7 @@ namespace Laboration2
             this.telefonnummer = telefonnummer;
             this.epostadress = epostadress;
             this.lösenord = lösenord;
-            this.LärarID = lärarID;
-        }
-
-        public static List<Lärare> lärareLista { get; set; } = new List<Lärare>();
-
-        public static List<Lärare> LärareLista()
-        {
-
-
-            return lärareLista;
+            this.lärarID = lärarID;
         }
 
 
