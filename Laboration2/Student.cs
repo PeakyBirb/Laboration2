@@ -8,17 +8,52 @@ namespace Laboration2
 {
     public class Student : Person
     {
-        public string personnummer { get; private set; }
-        public override string förnamn { get; set; }
-        public override string efternamn { get; set; }
-        public override string adress { get; set; }
-        public override string telefonnummer { get; set; }
-        public override string epostadress { get; set; }
-        public override string lösenord { get; set; }
+        public new string personnummer { get; private set; }
+        public new string förnamn { get; private set; }
+        public new string efternamn { get; private set; }
+        public new string adress { get; private set; }
+        public new string telefonnummer { get; private set; }
+        public new string epostadress { get; private set; }
+        public new string lösenord { get; private set; }
 
         public string studentID { get; set; }
 
-        
+        public string Personnummer
+        {
+            get { return personnummer; }
+        }
+
+        public string Förnamn
+        {
+            get { return förnamn; }
+        }
+
+        public string Efternamn
+        {
+            get { return efternamn; }
+        }
+
+
+        public string Adress
+        {
+            get { return adress; }
+        }
+
+        public string Telefonnumer
+        {
+            get { return telefonnummer; }
+        }
+
+        public string Epostadress
+        {
+            get { return epostadress; }
+        }
+
+        public string Lösenord
+        {
+            get { return lösenord; }
+        }
+
 
 
 
