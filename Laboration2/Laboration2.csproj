@@ -59,6 +59,12 @@
     <Compile Include="_RedigeraKurs.Designer.cs">
       <DependentUpon>_RedigeraKurs.cs</DependentUpon>
     </Compile>
+    <Compile Include="_TilldelaLaborationsuppgift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_TilldelaLaborationsuppgift.Designer.cs">
+      <DependentUpon>_TilldelaLaborationsuppgift.cs</DependentUpon>
+    </Compile>
     <Compile Include="_Välkommen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Student.cs" />
     <EmbeddedResource Include="_RedigeraKurs.resx">
       <DependentUpon>_RedigeraKurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_TilldelaLaborationsuppgift.resx">
+      <DependentUpon>_TilldelaLaborationsuppgift.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="_Välkommen.resx">
       <DependentUpon>_Välkommen.cs</DependentUpon>
